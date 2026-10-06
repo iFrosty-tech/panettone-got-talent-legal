@@ -1,0 +1,385 @@
+/*
+ * Panettone's Got Talent - legal pages.
+ * Colours come from the app's semantic tokens (docs/design/ui-guidelines.md).
+ * Brand red and gold are used for the header, links and accents only;
+ * body text stays ink on cream (light) or cream on night (dark).
+ */
+
+:root {
+  color-scheme: light dark;
+
+  --bg: #FFF8EC;            /* background (cream50) */
+  --surface: #FFFFFF;       /* surface */
+  --text: #1C1210;          /* textPrimary (ink900) */
+  --text-muted: #5C4A44;    /* textSecondary (ink600) */
+  --link: #9D2323;          /* primary (red700) */
+  --link-hover: #7E1B1C;    /* primaryPressed (red800) */
+  --border: #E6D5BC;        /* borderSubtle */
+  --accent: #E9B25C;        /* accent (gold400), decoration only */
+  --focus: #7A5512;         /* focus (gold700) */
+  --stage: #9D2323;         /* stage surface */
+  --stage-text: #FFF8EC;
+  --stage-highlight: #F6DD88;
+  --notice-bg: #FFF1D6;     /* warningContainer */
+  --notice-text: #7A4B00;   /* warning */
+
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --measure: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1F0A0B;          /* background, dark (night950) */
+    --surface: #2B1213;     /* surface, dark */
+    --text: #FBF1E3;        /* textPrimary, dark */
+    --text-muted: #D8C3B0;  /* textSecondary, dark */
+    --link: #E9B25C;        /* primary, dark (gold takes over) */
+    --link-hover: #F6DD88;  /* primaryPressed, dark */
+    --border: #4A2A28;      /* borderSubtle, dark */
+    --accent: #F6DD88;
+    --focus: #E9B25C;
+    --stage: #531413;       /* deep stage area */
+    --notice-bg: #3A2A08;   /* warningContainer, dark */
+    --notice-text: #FFD27A; /* warning, dark */
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+/* Header: the only large brand-red area */
+
+.site-header {
+  background: var(--stage);
+  color: var(--stage-text);
+  border-bottom: 4px solid var(--accent);
+}
+
+.site-header .inner {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+
+.brand {
+  color: var(--stage-text);
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.brand:hover,
+.brand:focus-visible {
+  color: var(--stage-highlight);
+}
+
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-switch a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 0.875rem;
+  border: 2px solid var(--stage-highlight);
+  border-radius: 999px;
+  color: var(--stage-highlight);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.lang-switch a:hover,
+.lang-switch a:focus-visible {
+  background: var(--stage-highlight);
+  color: #1C1210;
+}
+
+/* Main column */
+
+main {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+section[lang] + section[lang] {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 4px solid var(--accent);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  color: var(--text);
+}
+
+h1 {
+  font-size: 1.875rem;
+  margin: 0 0 0.25rem;
+}
+
+h2 {
+  font-size: 1.375rem;
+  margin: 2.25rem 0 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid var(--border);
+}
+
+h3 {
+  font-size: 1.125rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+[id] {
+  scroll-margin-top: 1rem;
+}
+
+p,
+ul,
+ol,
+table {
+  margin: 0 0 1rem;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+li + li {
+  margin-top: 0.375rem;
+}
+
+.meta {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.site-header a:focus-visible {
+  outline-color: var(--stage-highlight);
+}
+
+/* Summary box: the answer first */
+
+.summary {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--accent);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+}
+
+.summary h2 {
+  margin-top: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.summary ul {
+  margin-bottom: 0;
+}
+
+/* Warning notice (hosted rooms deleted for everyone) */
+
+.notice {
+  background: var(--notice-bg);
+  color: var(--notice-text);
+  border-radius: 8px;
+  padding: 0.875rem 1.25rem;
+  margin: 0 0 1.5rem;
+  font-weight: 600;
+}
+
+.notice p {
+  margin: 0;
+}
+
+/* Table of contents */
+
+.toc {
+  margin: 0 0 1.5rem;
+}
+
+.toc ol {
+  columns: 2 16rem;
+  column-gap: 2rem;
+}
+
+.toc li {
+  break-inside: avoid;
+}
+
+/* Steps */
+
+.steps > li {
+  padding-left: 0.25rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card > :last-child {
+  margin-bottom: 0;
+}
+
+/* Tables: two columns, wrap on small screens */
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 0 0 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  font-size: 0.975rem;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--border);
+}
+
+thead th {
+  background: var(--bg);
+}
+
+tbody th {
+  font-weight: 600;
+  width: 34%;
+}
+
+/* Footer */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+.site-footer .inner {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2rem;
+}
+
+.site-footer p {
+  margin: 0 0 0.5rem;
+}
+
+.site-footer a {
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+}
+
+/* Landing page links */
+
+.link-list {
+  list-style: none;
+  padding: 0;
+}
+
+.link-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 600;
+}
+
+@media (max-width: 30rem) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.625rem;
+  }
+
+  tbody th {
+    width: 40%;
+  }
+}
+
+@media print {
+  .site-header,
+  .lang-switch,
+  .site-footer {
+    background: none;
+    color: #000;
+    border: 0;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  a,
+  .brand {
+    color: #000;
+  }
+}
