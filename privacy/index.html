@@ -27,7 +27,7 @@
     <!-- ============================== ITALIANO ============================== -->
     <section id="it" lang="it">
       <h1>Informativa sulla privacy</h1>
-      <p class="meta">App Panettone's Got Talent · Ultimo aggiornamento e data di efficacia: 2026-10-06</p>
+      <p class="meta">App Panettone's Got Talent · Ultimo aggiornamento e data di efficacia: 2026-10-08</p>
 
       <div class="summary">
         <h2 id="it-in-breve">In breve</h2>
@@ -113,6 +113,10 @@
               <td>Apple e Google possono metterli a nostra disposizione tramite App Store Connect e Google Play Console, secondo i loro termini.</td>
             </tr>
             <tr>
+              <th scope="row">Aggiornamenti dell'app</th>
+              <td>Quando l'app controlla o scarica un aggiornamento, i server di Expo ricevono l'indirizzo IP del dispositivo e dati tecnici: piattaforma, versione dell'app e del runtime e un identificativo casuale dell'installazione generato dall'app.</td>
+            </tr>
+            <tr>
               <th scope="row">Messaggi che ci invii</th>
               <td>Se ci scrivi, riceviamo il tuo indirizzo email e il contenuto del messaggio.</td>
             </tr>
@@ -140,7 +144,7 @@
               <td>Art. 6, par. 1, lett. f): nostro legittimo interesse a mantenere private le stanze e sicuro il servizio.</td>
             </tr>
             <tr>
-              <th scope="row">Gestire, proteggere e correggere il servizio (log dei server, rapporti sugli arresti anomali)</th>
+              <th scope="row">Gestire, proteggere e correggere il servizio (log dei server, rapporti sugli arresti anomali, aggiornamenti dell'app)</th>
               <td>Art. 6, par. 1, lett. f): nostro legittimo interesse a un servizio funzionante e sicuro.</td>
             </tr>
             <tr>
@@ -164,11 +168,12 @@
         <li><strong>Gli altri membri delle tue stanze</strong>: vedono il tuo nome visualizzato e che fai parte della stanza. Nelle stanze che ospiti vedono i contenuti e le foto; in una stanza segreta i giocatori vedono l'identità dei panettoni solo dopo la pubblicazione dei risultati. Nessuno vede i tuoi voti individuali.</li>
         <li><strong>Amministrazione del servizio</strong>: Marco Verri, come amministratore, può tecnicamente accedere al database tramite la console di Supabase, compresi i dettagli delle stanze segrete e i voti. Usa questo accesso solo per far funzionare il servizio, risolvere problemi e gestire le tue richieste.</li>
       </ul>
-      <p>{{TBD: verificare se il servizio di aggiornamento dell'app (Expo EAS Update) e il servizio che conserva la copia di backup fuori sede ricevono dati personali e, in tal caso, elencarli qui come destinatari.}}</p>
+      <p>Inoltre <strong>Expo</strong> (650 Industries, Inc., Stati Uniti) fornisce il servizio di aggiornamento dell'app (EAS Update): quando l'app controlla o scarica un aggiornamento, riceve l'indirizzo IP del dispositivo e i dati tecnici descritti sopra. La copia di backup fuori sede è conservata, cifrata, su un disco esterno di Marco Verri: nessun altro fornitore riceve i backup.</p>
       <p>Non vendiamo i tuoi dati e non li condividiamo con inserzionisti o intermediari di dati.</p>
 
       <h2 id="it-trasferimenti">5. Dove sono i dati e trasferimenti fuori dallo SEE</h2>
-      <p>{{TBD: indicare la regione del progetto Supabase (ad esempio una regione nell'Unione europea) e, se dei dati sono trattati fuori dallo Spazio economico europeo, la garanzia applicata (decisione di adeguatezza, ad esempio l'EU-U.S. Data Privacy Framework, o clausole contrattuali tipo).}}</p>
+      <p>Supabase ospita i dati del servizio (database, accesso e archivio delle foto) in una regione dell'Unione europea. Supabase e i suoi sub-responsabili possono accedere ai dati anche da fuori dello Spazio economico europeo (ad esempio dagli Stati Uniti o da Singapore) per fornire e assistere il servizio; questi trasferimenti sono coperti dalle clausole contrattuali tipo approvate dalla Commissione europea, incluse nell'accordo sul trattamento dei dati di Supabase.</p>
+      <p>Expo tratta i dati degli aggiornamenti negli Stati Uniti. Expo dichiara di aderire all'EU-U.S. Data Privacy Framework, su cui si basa la decisione di adeguatezza della Commissione europea per gli Stati Uniti.</p>
       <p>Apple e Google trattano i dati di accesso secondo le proprie informative, che descrivono anche i loro trasferimenti internazionali.</p>
 
       <h2 id="it-conservazione">6. Per quanto tempo conserviamo i dati</h2>
@@ -184,7 +189,7 @@
             </tr>
             <tr>
               <th scope="row">Stanze, partecipazioni, voti, contenuti, foto e classifiche</th>
-              <td>Finché la stanza esiste; l'host può eliminarla in qualsiasi momento. Una stanza viene archiviata quando l'host la chiude o 30 giorni dopo la pubblicazione dei risultati; una stanza mai pubblicata viene archiviata dopo 14 giorni senza attività. {{TBD: decidere per quanto tempo stanze archiviate, voti e foto restano conservati prima dell'eliminazione (decisione aperta Q-07).}}</td>
+              <td>Finché la stanza esiste; l'host può eliminarla in qualsiasi momento. Una stanza viene archiviata quando l'host la chiude o 30 giorni dopo la pubblicazione dei risultati; una stanza mai pubblicata viene archiviata dopo 14 giorni senza attività. Le stanze archiviate, con i loro voti e le loro foto, vengono eliminate 90 giorni dopo l'archiviazione.</td>
             </tr>
             <tr>
               <th scope="row">Tentativi di ingresso con codici inesistenti</th>
@@ -211,8 +216,12 @@
               <td>Secondo i termini di Apple e Google.</td>
             </tr>
             <tr>
+              <th scope="row">Dati degli aggiornamenti dell'app</th>
+              <td>Secondo i termini di Expo.</td>
+            </tr>
+            <tr>
               <th scope="row">Messaggi che ci invii</th>
-              <td>{{TBD: decidere per quanto tempo si conservano le email di assistenza e le richieste sui diritti, comprese le richieste di eliminazione.}}</td>
+              <td>Le email di assistenza e le richieste sui diritti, comprese le richieste di eliminazione, sono conservate per 12 mesi e poi eliminate.</td>
             </tr>
           </tbody>
         </table>
@@ -255,17 +264,17 @@
       </ul>
 
       <h2 id="it-minori">11. Minori</h2>
-      <p>L'app non è rivolta ai bambini. {{TBD: definire l'età minima per usare l'app e cosa succede agli account di utenti più giovani.}}</p>
+      <p>L'app non è rivolta ai bambini. Per usarla devi avere almeno 14 anni, l'età del consenso digitale in Italia (art. 2-quinquies del Codice in materia di protezione dei dati personali e art. 8 GDPR). L'app non gestisce il consenso dei genitori: se veniamo a sapere che un account appartiene a una persona con meno di 14 anni, lo eliminiamo.</p>
 
       <h2 id="it-modifiche">12. Modifiche a questa informativa</h2>
       <p>Se modifichiamo questa informativa, pubblichiamo la nuova versione su questa pagina e aggiorniamo la data in alto.</p>
-      <p>Versione in vigore dal: 2026-10-06</p>
+      <p>Versione in vigore dal: 2026-10-08</p>
     </section>
 
     <!-- ============================== ENGLISH ============================== -->
     <section id="en" lang="en">
       <h1>Privacy policy</h1>
-      <p class="meta">Panettone's Got Talent app · Last updated and effective from: 2026-10-06</p>
+      <p class="meta">Panettone's Got Talent app · Last updated and effective from: 2026-10-08</p>
 
       <div class="summary">
         <h2 id="en-summary">In short</h2>
@@ -351,6 +360,10 @@
               <td>Apple and Google may make them available to us in App Store Connect and Google Play Console, under their own terms.</td>
             </tr>
             <tr>
+              <th scope="row">App updates</th>
+              <td>When the app checks for or downloads an update, Expo's servers receive the device's IP address and technical data: platform, app and runtime version, and a random installation ID generated by the app.</td>
+            </tr>
+            <tr>
               <th scope="row">Messages you send us</th>
               <td>If you write to us, we receive your email address and your message.</td>
             </tr>
@@ -378,7 +391,7 @@
               <td>Art. 6(1)(f): our legitimate interest in keeping rooms private and the service secure.</td>
             </tr>
             <tr>
-              <th scope="row">Operate, secure and fix the service (server logs, crash reports)</th>
+              <th scope="row">Operate, secure and fix the service (server logs, crash reports, app updates)</th>
               <td>Art. 6(1)(f): our legitimate interest in a working, secure service.</td>
             </tr>
             <tr>
@@ -402,11 +415,12 @@
         <li><strong>Other members of your rooms</strong>: they see your display name and that you belong to the room. In rooms you host they see the content and photos; in a secret room, players see the panettoni's identity only after the results are published. Nobody sees your individual votes.</li>
         <li><strong>Service administration</strong>: Marco Verri, as administrator, can technically access the database through the Supabase console, including secret room details and votes. This access is used only to run the service, fix problems and handle your requests.</li>
       </ul>
-      <p>{{TBD: check whether the app update service (Expo EAS Update) and the service holding the off-site backup copy receive personal data and, if so, list them here as recipients.}}</p>
+      <p>In addition, <strong>Expo</strong> (650 Industries, Inc., USA) provides the app update service (EAS Update): when the app checks for or downloads an update, Expo receives the device's IP address and the technical data described above. The off-site backup copy is kept, encrypted, on an external disk owned by Marco Verri: no other provider receives backups.</p>
       <p>We do not sell your data and do not share it with advertisers or data brokers.</p>
 
       <h2 id="en-transfers">5. Where the data is and transfers outside the EEA</h2>
-      <p>{{TBD: state the region of the Supabase project (for example an EU region) and, if any data is processed outside the European Economic Area, the safeguard used (an adequacy decision such as the EU-U.S. Data Privacy Framework, or standard contractual clauses).}}</p>
+      <p>Supabase hosts the service data (database, sign-in and photo storage) in a European Union region. Supabase and its sub-processors may also access the data from outside the European Economic Area (for example from the United States or Singapore) to provide and support the service; these transfers are covered by the standard contractual clauses approved by the European Commission, included in Supabase's data processing agreement.</p>
+      <p>Expo processes app update data in the United States. Expo states that it adheres to the EU-U.S. Data Privacy Framework, on which the European Commission's adequacy decision for the United States is based.</p>
       <p>Apple and Google process sign-in data under their own privacy policies, which also describe their international transfers.</p>
 
       <h2 id="en-retention">6. How long we keep data</h2>
@@ -422,7 +436,7 @@
             </tr>
             <tr>
               <th scope="row">Rooms, memberships, votes, content, photos and rankings</th>
-              <td>While the room exists; the host can delete it at any time. A room is archived when the host closes it or 30 days after its results are published; a room that is never published is archived after 14 days without activity. {{TBD: decide how long archived rooms, votes and photos are kept before deletion (open decision Q-07).}}</td>
+              <td>While the room exists; the host can delete it at any time. A room is archived when the host closes it or 30 days after its results are published; a room that is never published is archived after 14 days without activity. Archived rooms, with their votes and photos, are deleted 90 days after they are archived.</td>
             </tr>
             <tr>
               <th scope="row">Join attempts with unknown codes</th>
@@ -449,8 +463,12 @@
               <td>As set by Apple's and Google's terms.</td>
             </tr>
             <tr>
+              <th scope="row">App update data</th>
+              <td>As set by Expo's terms.</td>
+            </tr>
+            <tr>
               <th scope="row">Messages you send us</th>
-              <td>{{TBD: decide how long support emails and rights requests, including deletion requests, are kept.}}</td>
+              <td>Support emails and rights requests, including deletion requests, are kept for 12 months and then deleted.</td>
             </tr>
           </tbody>
         </table>
@@ -493,11 +511,11 @@
       </ul>
 
       <h2 id="en-children">11. Children</h2>
-      <p>The app is not directed at children. {{TBD: define the minimum age to use the app and what happens to accounts of younger users.}}</p>
+      <p>The app is not directed at children. You must be at least 14 to use it, the age of digital consent in Italy (Art. 2-quinquies of the Italian Personal Data Protection Code and GDPR Art. 8). The app does not handle parental consent: if we learn that an account belongs to someone under 14, we delete it.</p>
 
       <h2 id="en-changes">12. Changes to this policy</h2>
       <p>If we change this policy, we publish the new version on this page and update the date at the top.</p>
-      <p>Version effective from: 2026-10-06</p>
+      <p>Version effective from: 2026-10-08</p>
     </section>
   </main>
 
