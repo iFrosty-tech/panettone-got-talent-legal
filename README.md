@@ -21,7 +21,7 @@ Every page is bilingual: Italian (`#it`) first, then English (`#en`). Keep both 
 | Value | Meaning | Where |
 | --- | --- | --- |
 | Marco Verri | Data controller, shown as developer name on the stores | `index.html` (2), `privacy/index.html` (6), `delete-account/index.html` (2) |
-| marco_verri@icloud.com | Privacy contact, also used for deletion requests by email | `index.html` (2), `privacy/index.html` (6), `delete-account/index.html` (2) |
+| tag-tic.99@icloud.com | Privacy contact, also used for deletion requests by email | `index.html` (2), `privacy/index.html` (6), `delete-account/index.html` (2) |
 | 2026-10-06 | Last updated and effective date of the privacy policy | `privacy/index.html` (4) |
 
 ## Open points
